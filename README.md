@@ -10,3 +10,8 @@ xcode-select --install
 ```
 
 2. Clone this repo
+
+Things I've done:
+- Installed homebrew
+- Installed a bunch of casks: 1password, chrome, vscode, opera-gx, readdle-spark, alfred
+- Set Alfred license
