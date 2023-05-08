@@ -13,5 +13,8 @@
     - ~/Repos
     - ~/Pictures/Screenshots
 
-# - shell:
-#   - [git submodule update --init --recursive, Installing submodules]
+- shell:
+  - 
+    command: ./setup_homebrew.zsh
+    stderr: true
+    stdout: true
