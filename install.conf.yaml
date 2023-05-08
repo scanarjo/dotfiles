@@ -7,6 +7,9 @@
 - link:
     ~/.gitconfig:
     ~/.zshrc:
+    ~/.config/bat:
+      create: true
+      path: config/bat
 
 - create:
     - ~/Repos
