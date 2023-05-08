@@ -13,7 +13,9 @@ defaults write com.apple.AppleMultitouchTrackpad Dragging -int 1
 defaults write com.apple.finder ShowPathbar -bool true
 
 # Dock
-defaults write com.apple.dock "autohide" -bool "true"
+defaults write com.apple.dock autohide -bool "true"
+defaults write com.apple.dock autohide-time-modifier -float 0.5
+defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock tilesize -int 42
 defaults write com.apple.dock largesize -int 72
 defaults write com.apple.dock magnification -bool true
