@@ -1,6 +1,8 @@
 [user]
 	name = Scott Arden-Jones
 	email = 4737932+scanarjo@users.noreply.github.com
+[core]
+	editor = code --wait
 [diff]
     tool = default-difftool
 [difftool "default-difftool"]
