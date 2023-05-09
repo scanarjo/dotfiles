@@ -1,3 +1,11 @@
 [user]
 	name = Scott Arden-Jones
 	email = 4737932+scanarjo@users.noreply.github.com
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+  tool = code
+[mergetool "code"]
+  cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
