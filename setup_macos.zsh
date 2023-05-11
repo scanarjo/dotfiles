@@ -26,6 +26,9 @@ defaults write com.apple.dock "static-only" -bool "true"
 # Screencapture
 defaults write com.apple.screencapture location ~/Pictures/Screenshots
 
+# Show Bluetooth in menu bar
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist Bluetooth -int 18
+
 # Kill affected applications
 killall Dock
 killall Finder
