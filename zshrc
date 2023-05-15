@@ -14,6 +14,7 @@ alias cmd='command'
 alias ls='exa'
 alias ll='exl'
 alias exl='exa -aFl --git'
+alias bbd='brew bundle dump --force --file=~/.dotfiles/Brewfile'
 
 # Functions
 function mkcd() {
