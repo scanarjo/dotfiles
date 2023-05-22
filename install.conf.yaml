@@ -5,18 +5,25 @@
 - clean: ['~']
 
 - link:
+    ~/.antigenrc:
     ~/.gitconfig:
     ~/.zshrc:
     ~/.zshenv:
     ~/.config/bat:
       create: true
       path: config/bat
+    ~/antigen.zsh:
+      ignore-missing: true
+      path: antigen.zsh
 
 - create:
     - ~/Repos
     - ~/Pictures/Screenshots
 
 - shell:
+  - command: ./setup_antigen.zsh
+    stderr: true
+    stdout: true
   - command: ./setup_homebrew.zsh
     stderr: true
     stdout: true
