@@ -5,6 +5,12 @@ source ~/.antigenrc
 # Configure fnm
 eval "$(fnm env --use-on-cd)"
 
+# Configure autocomplete
+fpath+="/opt/homebrew/share/zsh/site-functions"
+
+autoload -Uz compinit
+compinit
+
 # Env vars
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export HOMEBREW_CASK_OPTS="--no-quarantine"
