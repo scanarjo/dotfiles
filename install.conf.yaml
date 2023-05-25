@@ -2,10 +2,11 @@
     link:
       relink: true
 
-- clean: ['~']
+- clean: ["~"]
 
 - link:
     ~/.antigenrc:
+    ~/.editorconfig:
     ~/.gitconfig:
     ~/.zshrc:
     ~/.zshenv:
@@ -21,12 +22,12 @@
     - ~/Pictures/Screenshots
 
 - shell:
-  - command: ./setup_antigen.zsh
-    stderr: true
-    stdout: true
-  - command: ./setup_homebrew.zsh
-    stderr: true
-    stdout: true
-  - command: ./setup_macos.zsh
-    stdout: true
-    stderr: true
+    - command: ./setup_antigen.zsh
+      stderr: true
+      stdout: true
+    - command: ./setup_homebrew.zsh
+      stderr: true
+      stdout: true
+    - command: ./setup_macos.zsh
+      stdout: true
+      stderr: true
