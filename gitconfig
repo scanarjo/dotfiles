@@ -1,6 +1,7 @@
 [user]
 	name = Scott Arden-Jones
 	email = 4737932+scanarjo@users.noreply.github.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ05qijf0tH3bITqcgg57+HI84vaatdzq0V9qX1Tm6t/
 [core]
 	editor = code --wait
 [diff]
@@ -11,3 +12,9 @@
   tool = code
 [mergetool "code"]
   cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
