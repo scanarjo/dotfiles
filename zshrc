@@ -30,8 +30,17 @@ alias exl='exa -aFl --git'
 alias bbd='brew bundle dump --force --file=~/.dotfiles/Brewfile'
 alias trail='<<<${(F)path}'
 alias cat='bat'
+alias pn='pnpm'
 
 # Functions
 function mkcd() {
   mkdir -p "$@" && cd "$_"
 }
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/scott/gcloud-sdk/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/scott/gcloud-sdk/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/scott/gcloud-sdk/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/scott/gcloud-sdk/google-cloud-sdk/completion.zsh.inc'; fi
+
+export CLOUDSDK_PYTHON=$(which python3)
