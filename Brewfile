@@ -1,10 +1,14 @@
+# Tap additional repos
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
+
+# Install brews (CLI packages)
 brew "bat"
 brew "bat-extras"
 brew "eza"
 brew "fnm"
 brew "httpie"
+
+# Install casks (GUI packages)
 cask "1password"
 cask "1password-cli"
 cask "adobe-acrobat-reader"
