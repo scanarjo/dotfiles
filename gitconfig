@@ -4,6 +4,7 @@
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ05qijf0tH3bITqcgg57+HI84vaatdzq0V9qX1Tm6t/
 [core]
 	editor = code --wait
+	ignorecase = false
 [diff]
     tool = default-difftool
 [difftool "default-difftool"]
