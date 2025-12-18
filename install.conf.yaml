@@ -8,6 +8,7 @@
     ~/.antigenrc:
     ~/.editorconfig:
     ~/.gitconfig:
+    ~/.zprofile:
     ~/.zshrc:
     ~/.zshenv:
     ~/.config/bat:
