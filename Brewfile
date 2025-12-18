@@ -1,4 +1,3 @@
-tap "homebrew/bundle"
 tap "oven-sh/bun"
 brew "libssh2"
 brew "bat"
