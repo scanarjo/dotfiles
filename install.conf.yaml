@@ -8,6 +8,8 @@
     ~/.antigenrc:
     ~/.editorconfig:
     ~/.gitconfig:
+    ~/.ssh/config:
+      path: ssh/config
     ~/.zprofile:
     ~/.zshrc:
     ~/.zshenv:
