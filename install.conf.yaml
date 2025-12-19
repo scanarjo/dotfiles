@@ -8,6 +8,9 @@
     ~/.antigenrc:
     ~/.editorconfig:
     ~/.gitconfig:
+    ~/.node-version:
+    ~/.nvmrc:
+      path: node-version
     ~/.ssh/config:
       path: ssh/config
     ~/.zprofile:
