@@ -40,4 +40,14 @@ killall SystemUIServer
 
 /System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u
 
+# Disable Spotlight shortcut
+/usr/libexec/PlistBuddy ~/Library/Preferences/com.apple.symbolichotkeys.plist \
+  -c "Delete :AppleSymbolicHotKeys:64" \
+  -c "Add :AppleSymbolicHotKeys:64:enabled bool false" \
+  -c "Add :AppleSymbolicHotKeys:64:value:parameters array" \
+  -c "Add :AppleSymbolicHotKeys:64:value:parameters: integer 65535" \
+  -c "Add :AppleSymbolicHotKeys:64:value:parameters: integer 49" \
+  -c "Add :AppleSymbolicHotKeys:64:value:parameters: integer 1048576" \
+  -c "Add :AppleSymbolicHotKeys:64:type string standard"
+
 echo "\nMacOS Setup Complete. A logout or restart might be necessary.\n"
