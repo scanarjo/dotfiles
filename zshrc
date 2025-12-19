@@ -2,9 +2,6 @@
 source ~/antigen.zsh
 source ~/.antigenrc
 
-# Configure fnm
-eval "$(fnm env --use-on-cd)"
-
 # Configure autocomplete
 fpath+="/opt/homebrew/share/zsh/site-functions"
 
@@ -45,3 +42,6 @@ if [ -f '/Users/scott/gcloud-sdk/google-cloud-sdk/path.zsh.inc' ]; then . '/User
 if [ -f '/Users/scott/gcloud-sdk/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/scott/gcloud-sdk/google-cloud-sdk/completion.zsh.inc'; fi
 
 export CLOUDSDK_PYTHON=$(which python3)
+
+# Configure fnm
+eval "$(fnm env --use-on-cd --version-file-strategy=recursive --shell zsh)"
