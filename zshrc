@@ -4,6 +4,7 @@ source ~/.antigenrc
 
 # Configure autocomplete
 fpath+="/opt/homebrew/share/zsh/site-functions"
+fpath=(/Users/scott/.docker/completions $fpath)
 
 autoload -Uz compinit
 compinit
