@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 
 # Setup system preferences using the defaults command (https://ss64.com/mac/defaults.html)
+# Available preferences documented here: https://ss64.com/mac/syntax-defaults.html
 
 echo "\nSetting up MacOS...\n"
 
@@ -13,6 +14,7 @@ defaults write com.apple.AppleMultitouchTrackpad Dragging -bool true
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Dragging -bool true
 
 # Finder
+defaults write com.apple.finder AppleShowAllFiles TRUE # Show hidden files
 defaults write com.apple.finder ShowPathbar -bool true
 
 # Dock
