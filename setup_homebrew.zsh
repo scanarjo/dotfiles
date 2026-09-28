@@ -1,7 +1,8 @@
 #!/usr/bin/env zsh
 
+echo "Checking for existing Homebrew install..."
 
-if exists brew; then
+if ! type "$brew" > /dev/null; then
   echo "Homebrew already installed. Skipping..."
 else
   echo "\nInstalling Homebrew...\n"
