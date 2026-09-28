@@ -1,4 +1,4 @@
-tap "oven-sh/bun"
+tap "oven-sh/bun", trusted:true
 brew "libssh2"
 brew "bat"
 brew "bat-extras"
