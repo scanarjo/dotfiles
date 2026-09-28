@@ -1,4 +1,5 @@
 tap "oven-sh/bun", trusted:true
+tap "hashicorp/tap", trusted:true
 brew "libssh2"
 brew "bat"
 brew "bat-extras"
@@ -11,7 +12,7 @@ brew "httpie"
 brew "media-info"
 brew "python@3.13"
 brew "starship"
-brew "terraform"
+brew "hashicorp/tap/terraform"
 brew "oven-sh/bun/bun"
 cask "1password"
 cask "1password-cli"
