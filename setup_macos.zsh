@@ -1,5 +1,7 @@
 #!/usr/bin/env zsh
 
+# Setup system preferences using the defaults command (https://ss64.com/mac/defaults.html)
+
 echo "\nSetting up MacOS...\n"
 
 # Ensure System Preferences is closed
