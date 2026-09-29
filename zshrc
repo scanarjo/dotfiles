@@ -2,6 +2,8 @@
 source ~/antigen.zsh
 source ~/.antigenrc
 
+plugins=(git command-not-found docker)
+
 # Configure autocomplete
 fpath+="/opt/homebrew/share/zsh/site-functions"
 fpath=(/Users/scott/.docker/completions $fpath)
